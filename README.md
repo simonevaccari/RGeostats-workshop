@@ -1,6 +1,8 @@
 # RGeostats-workshop
 RGeostats Workshop, INTAROS GA, Bremen 2019 
 
+## Preliminary setup
+
 With your Terradue Cloud Platform account properly upgraded:
 
 Prepare your iAOS "Ellip Notebooks" work environment (for working with Cloud Computing resources)  
