@@ -18,4 +18,5 @@ Prepare your iAOS "Ellip Notebooks" work environment (for working with Cloud Com
       ./configure_workshop.sh
   
 You are ready for the Workshop!
+
 Best regards.
