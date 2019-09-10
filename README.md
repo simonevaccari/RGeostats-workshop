@@ -9,7 +9,7 @@ Prepare your iAOS "Ellip Notebooks" work environment (for working with Cloud Com
     a. Install the last version of the Chrome browser (https://www.google.com/chrome)  
     b. Using Chrome:
        - Sign-in on https://www.terradue.com  
-       - Access your Jupyter Notebook environment on https://notebooks-qa.terradue.com  
+       - Access your Jupyter Notebook environment on https://notebooks.terradue.com  
     c. From this Jupyter Notebook environment, click on the "New" button, open a "Terminal" and then execute all the following shell commands (duration is about 10mn):  
 
       rm -f configure_workshop.sh
