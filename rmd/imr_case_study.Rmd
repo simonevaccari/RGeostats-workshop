@@ -57,19 +57,19 @@ The **flag_file** allows the user to store each generated graphic file as a **PN
 # Setup environment
 dir.name   = getwd()
 file.name  = "imr_data_0_to_100m.csv"
-data.name  = "data"
-image.name = "images"
+data.name  = "../data"
+image.name = "../images"
 long_lim   = c(-20,60)
 lat_lim    = c(52,83)
 intaros.save.environ(long_lim = long_lim, lat_lim = lat_lim,
-                     flag_file = FALSE,image_name = file.path(dir.name,image.name))
+                     flag_file = FALSE, image_dir = file.path(dir.name, image.name))
 ```
 
 
 Then we read the **CSV** file (taking the header line into account) and create the RGeostats Db. Finally we show the contents of the newly created Db (named **db0**).
 
 ```{r Reading Data}
-if (flag.read || ! exists("db0")) db0 = imr_read_csv(file.path(dir.name,data.name,file.name))
+if (flag.read || ! exists("db0")) db0 = imr_read_csv(file.path(dir.name, data.name, file.name))
 db0
 ```
 

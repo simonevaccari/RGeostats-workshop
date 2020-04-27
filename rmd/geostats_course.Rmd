@@ -1,7 +1,7 @@
 ---
 title: "INTAROS - IMR Dataset - RGeostats Workshop Course"
 author: "D. Renard, F. Ors"
-date: "January 22nd 2019"
+date: "March 31st 2019"
 output:
   html_document: default
   pdf_document: default
@@ -42,7 +42,7 @@ It is based on the **Annual CTD datasets** from Norwegion Institute of Marine Re
 
 ```{r Reading CSV File}
 dir.name   = getwd()
-data.name  = "data"
+data.name  = "../data"
 file.name  = "imr_data_by_10m.csv"
 db0        = imr_read_csv(file.path(dir.name,data.name,file.name))
 ```
@@ -52,9 +52,9 @@ For the sake of this short demonstration, we focus on a small area (located clos
 ```{r Define Environment Variables, message = FALSE, warning = FALSE}
 long_lim   = c(-2,10)
 lat_lim    = c(56,62)
-image.name = "images"
+image.name = "../images"
 intaros.save.environ(long_lim = long_lim, lat_lim = lat_lim,
-                     flag_file = FALSE,image_name = file.path(dir.name,image.name))
+                     flag_file = FALSE, image_dir = file.path(dir.name,image.name))
 ```
 
 # Basic statistics
